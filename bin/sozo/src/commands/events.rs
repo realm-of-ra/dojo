@@ -38,7 +38,7 @@ pub struct EventsArgs {
     #[arg(default_value_t = 100)]
     pub chunk_size: u64,
 
-    #[arg(long)]
+    #[arg(short, long)]
     #[arg(help = "Maximum number of blocks to query at once")]
     #[arg(default_value_t = 50_000)]
     pub max_block_range: u64,
